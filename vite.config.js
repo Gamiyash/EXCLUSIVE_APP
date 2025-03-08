@@ -6,7 +6,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 export default defineConfig({
   plugins: [react(), VitePWA({
     registerType: 'autoUpdate',
-    includeAssets: ['favicon.ico', 'robots.txt', 'icons/icon-192x192.png', 'icons/icon-512x512.png'],
+    includeAssets: ['favicon.ico', 'robots.txt', 'web-app-manifest-192x192.png.png', 'web-app-manifest-512x512.png'],
     manifest: {
       name: 'Your App Name',
       short_name: 'App Name',
@@ -27,6 +27,7 @@ export default defineConfig({
           type: 'image/png'
         }
       ]
+      
     }
   })
 ],
